@@ -23,6 +23,7 @@ body{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    background-color: #081b29;
 }
 .logo{
     position: relative;
@@ -128,21 +129,27 @@ body{
     box-shadow: 0 0 20px #0ef;
 }
 .about{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    gap: 2.5rem;
+    margin: 20px 100px;
+    height: 100vh;
+}
+.about-img{
+    width: 35%;
+    display: flex;
+    justify-content: center;
 }
 .about-img img{
     
-    max-width: 310px;
-    height: auto;
-    width: 100%;
-    border-radius: 30px;
-    margin-left: 150px;
-    margin-top: 150px;
-    margin-bottom: 150px;
+    height: 470px;
+    width: 350px;
+    border-radius: 5px;
     
+}
+.about-text{
+    width: 60%;
 }
 .about-text h2{
       font-size: 60px;
@@ -182,25 +189,41 @@ body{
 .main-text h2 span{
     color: #0ef;
 }
+.project{
+    height: 100vh;
+    margin: 20px 100px;
+}
+.project-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
 .project-content{
-   margin-top: 100px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(359px,auto));
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 100px;
+    height: 45vh;
 
 }
 .row{
+    display: flex;
     position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     overflow: hidden;
     border-radius: 8px;
     cursor: pointer;
+    width: 32%;
+    height: 90%;
 }
 .row img{
-    width: 90%;
+    width: 100%;
+    height: 100%;
     border-radius: 20px;
-    display: block;
     transition: transform 0.5s;
-    margin-left: 20px;
-
 }
 .layer{
     width: 100%;
@@ -397,23 +420,39 @@ body{
   .sub-title span{
     color: #0ef;
   }
-  .skill-main {
-    display:flex;
-    flex-direction:row;
-    justify-content:space-evenly;
-    margin-top:14px
+  .skill{
+    margin:40px 100px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
   }
-  .skills-main_1 {
-    width:45%;
-    display:flex;
-    flex-wrap:wrap;
-    gap:37px
+  .skill-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
   }
+  .skill-container-1{
+    display: flex;
+    flex-direction: row;
+    height: 73vh;
+
+  }
+.skill-container-3{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.skill-container-4{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
   .skill-main_1 {
     display:flex;
     flex-direction:column;
     align-items:center;
-    gap:11px
+    
   }
   .skill-image {
     background-color:var(--color-secondary);
@@ -437,61 +476,44 @@ body{
     font-family:var(--font-roboto);
     font-weight:500
   }
-  .skill-details {
-    width:45%;
+  .skill-container-2{
+    display: flex;
+    width: 50%;
+}
+  .skill-container-2 ul {
+    width:100%;
     display:flex;
     flex-direction:column;
-    gap:40px
+    gap:40px;
+
   }
-  .skill-details_1 {
+  .skill-container-2 ul li {
     display:flex;
     flex-direction:row;
+    height: 28%;
     align-items:center;
+    justify-content: space-between;
     gap:17px;
-    background:#2790a0;
     background:linear-gradient(90deg,#38ddca,#084d6800);
     border-radius:10px;
     padding:24px
   }
-  .skill-details_1 img {
+  .skill-container-2 ul li img {
     width:70px
   }
-  ._skill-details_2 {
-    font-family:var(--font-roboto)
+  .skill-details {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 100%;
+
   }
-  .skill-details_2 h3 {
-    font-size:30px;
+  .skill-details h3 {
+    font-size:25px;
     font-weight:500
   }
-  .skill-details_2 p {
+  .skill-details p {
     font-size:20px;
     font-weight:300
   }
-  .skill-details_2 ul {
-    margin-top:6px;
-    list-style-position:inside;
-    font-size:25px;
-    list-style-type:disc;
-    margin-left:17px
-  }
-  @media screen and (max-width: 830px) {
-    .skill-main {
-      flex-direction:column;
-      align-items:center;
-      gap:34px
-    }
-    .skills-main_1 {
-      width:100%;
-      flex-direction:row;
-      justify-content:center
-    }
-    .skill-details{
-      width:100%;
-      gap:9px
-    }
-  }
-@media only screen and (max-width: 768px) {
-  [class*="body"] {
-    width: 100%;
-  }
-}
+   
