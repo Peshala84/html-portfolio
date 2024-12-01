@@ -191,7 +191,7 @@ body{
 }
 .project{
     height: 100vh;
-    margin: 20px 100px;
+    margin: 0px 100px;
 }
 .project-header{
     display: flex;
@@ -274,17 +274,19 @@ body{
 }
 
 .contact{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
     align-items: center;
-    gap: 3rem;
-    padding-left: 30px;
-    margin-top: 130px;
+    justify-content: space-between;
+    margin: 0px 100px;
+    margin-top: 250px;
+}
+.contact-text{
+    width: 50%;
 }
 .contact-text h2{
-    font-size: 90px;
+    font-size: 70px;
     line-height: 1;
-    text-align: center;
+    
 }
 .contact-text h2 span{
     color: #0ef;
@@ -296,28 +298,17 @@ body{
     margin-bottom: 2rem;
 }
 .contact-list{
-    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
 }
-.contact-list li{
-
-    margin-bottom: 10px;
-    display: block;
+.contact-other{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
-.contact-list li{
-
-    margin-bottom: 10px;
-    display: block;
-}
-.contact-list i{
-    display: inline-block;
-    color: #0ef;
-    font-size: 20px;
-    font-weight: 600;
-    transition: all .40s ease;
-}
-.contact-list li a:hover{
-    transform: scale(1.01) translateY(-5px);
-    color: #0ef;
+.contact-other i{
+    font-size: 30px;
+    color:aqua;
 }
 .contact-icons i{
     display: inline-flex ;
@@ -341,8 +332,13 @@ body{
     color: #000;
     box-shadow: 0 0 20px #0ef;
 }
+.contact-form{
+    width: 50%;
+}
 .contact-form form{
     position: relative;
+    margin: 10px;
+
 }
 .contact-form form input,form textarea{
     border: none;
@@ -375,11 +371,11 @@ body{
     animation-delay: 2s;
     box-shadow: 0 0 5px #0ef,
     0 0 25px #0ef;
+    cursor: pointer;
 }
 .contact-form form .send:hover{
     box-shadow: 0 0 5px cyan,
     0 0 25px cyan, 0 0 50px cyan
-    0 0 100px cyan, 0 0 200px cyan;
 }
 .last-text p{
     width: 100%;
