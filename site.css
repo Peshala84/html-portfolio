@@ -219,6 +219,7 @@ body{
     width: 32%;
     height: 90%;
 }
+
 .row img{
     width: 100%;
     height: 100%;
@@ -243,7 +244,7 @@ body{
     transition: height 0.5s;
 }
 .layer h5{
-    color: #000;
+    color: white;
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 15px;
@@ -251,6 +252,7 @@ body{
 }
 .layer p{
     color: #000;
+    font-weight: 600;
     font-size: 1rem;
     line-height: 1.8;
 }
